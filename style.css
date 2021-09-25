@@ -1,0 +1,57 @@
+*{
+    background-color: black;
+    color: white;
+    font-family: 'Gemunu Libre', sans-serif;
+    text-align: center;
+}
+label{
+    font-size: 40px;
+}
+h1{
+    font-size: 45px;
+}
+p{
+    font-size: 25px;
+    margin-bottom: 60px;
+}
+#hr,#min,#sec{
+    border: 2px solid white;
+    font-size: 60px;
+    width: 150px;
+    margin-bottom: 20px;
+    padding: 10px;
+    margin-right: 10px;
+}
+#start,#pause,#resume,#reset{
+    font-size: 25px;
+    padding: 10px;
+    margin-right:10px;
+}
+#start{
+    background-color: green;
+    border: 2px solid green;
+}
+#pause,#resume{
+    background-color: red;
+    border: 2px solid red;
+}
+#reset{
+    background-color: blue;
+    border:2px solid blue;
+}
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+}
+#start:hover{
+    color: green;
+    background-color: white;
+}
+#pause:hover,#resume:hover{
+    background-color: white;
+    color: red;
+}
+#reset:hover{
+    background-color: white;
+    color: blue;
+}
