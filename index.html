@@ -7,13 +7,14 @@
     <meta name="description" content="A Basic Countdown Timer">
     <!--Project CSS-->
     <link rel="stylesheet" type="text/css" href="style.css">
-    <!--jQuery CDN-->
-    <script src="https://code.jquery.com/jquery-3.6.0.js" 
-    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!--jQuery file-->
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" 
+    integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@300&display=swap" rel="preload">
     <title>Countdown Timer</title>
 </head>
 <body>
@@ -23,12 +24,12 @@
         You can also 'Pause' and 'Resume' the timer or 'Reset' the timer.
     </p>
     <form>
-        <label for="hr">Hour</label>
-        <label for="min">Minute</label>
-        <label for="sec">Second</label><br>
         <input id="hr" type="number" min="0" name="hr" value="0">
+        <label for="hr">Hours</label>
         <input id="min" type="number" min="0" max="59" name="min" value="0">
-        <input id="sec" type="number" min="0" max="59" name="sec" value="0"><br>
+        <label for="min">Minutes</label>
+        <input id="sec" type="number" min="0" max="59" name="sec" value="0">
+        <label for="sec">Seconds</label><br>
         <input id="start" type="button" value="Start" onclick="startcount();">
         <input id="pause" type="button" value="Pause" onclick="pausecount();">
         <input id="resume" type="button" value="Resume" onclick="resumecount();">

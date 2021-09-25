@@ -4,6 +4,9 @@
     font-family: 'Gemunu Libre', sans-serif;
     text-align: center;
 }
+input{
+    outline: none;
+}
 label{
     font-size: 40px;
 }
@@ -13,27 +16,29 @@ h1{
 p{
     font-size: 25px;
     margin-bottom: 60px;
+    margin-top: 90px;
 }
 #hr,#min,#sec{
     border: 2px solid white;
     font-size: 60px;
     width: 150px;
-    margin-bottom: 20px;
     padding: 10px;
-    margin-right: 10px;
+    margin: 40px 10px 20px 10px;
 }
 #start,#pause,#resume,#reset{
-    font-size: 25px;
-    padding: 10px;
-    margin-right:10px;
+    margin-top: 80px;
+    font-size: 30px;
+    padding: 20px;
+    margin-right:40px;
+    cursor: pointer;
 }
 #start{
     background-color: green;
     border: 2px solid green;
 }
 #pause,#resume{
-    background-color: red;
-    border: 2px solid red;
+    background-color: crimson;
+    border: 2px solid crimson;
 }
 #reset{
     background-color: blue;
@@ -49,9 +54,38 @@ input::-webkit-outer-spin-button{
 }
 #pause:hover,#resume:hover{
     background-color: white;
-    color: red;
+    color: crimson;
 }
 #reset:hover{
     background-color: white;
     color: blue;
+}
+@media screen and (max-width: 800px){
+    label{
+        font-size: 25px;
+    }
+    #hr,#min,#sec{
+        width:50px;
+        font-size: 30px;
+    } 
+    #start,#pause,#resume,#reset{
+        padding: 7px;
+    }  
+}
+@media screen and (max-width: 600px){
+    label{
+        font-size: 15px;
+    }
+    #hr,#min,#sec{
+        font-size: 20px;
+        width: 40px;
+        padding: 2px;
+        margin: 15px 3px 8px 3px;
+    }
+    #start,#pause,#resume,#reset{
+        margin-top: 40px;
+        font-size: 18px;
+        padding: 10px;
+        margin-right:20px;
+    }
 }
