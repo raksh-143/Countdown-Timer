@@ -1,5 +1,5 @@
 let timer;
-$(document).ready(function(){
+$(function(){
     $("#resume").hide();
 })
 function startcount(){
